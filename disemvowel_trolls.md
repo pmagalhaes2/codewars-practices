@@ -16,3 +16,17 @@ function disemvowel(str) {
   return str.replace(/[aeiouà-ú]/gi, "");
 }
 ```
+
+**Second:**
+```javascript
+function disemvowel(str) {
+  for(let i = 0; i < str.length; i++){
+    if(str[i].match(/[aeiou]/gi)){
+      str = str.replace(str[i], "");
+      i--;
+    }
+  }
+  return str;
+}
+```
+
