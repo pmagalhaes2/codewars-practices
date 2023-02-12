@@ -34,3 +34,11 @@ function positiveSum(arr) {
 }
 ```
 
+**Third:**
+
+```javascript 
+function positiveSum(arr) {
+  return arr.filter((num) => num > 0).reduce((accum, curr) => accum + curr, 0);
+}
+```
+
