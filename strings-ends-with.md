@@ -10,6 +10,6 @@ solution('abc', 'd') // returns false
 **First:**
 ```javascript
 function solution(str, ending){
-  return str.slice(-ending.length) === ending;
+  return str.slice(-ending.length) === ending || ending === '';
 }
 ```
